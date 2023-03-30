@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Permanent+Marker&family=Righteous&family=Satisfy&display=swap');
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body{
+	background-color: black;
+}
+#birthday{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 86vh;
+}
+#birthday::before{
+	content: "";
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	background: url("images/bday.jpg") no-repeat center center/cover;
+	opacity: 0.8;
+}
+#birthday h1{
+	font-size: 4rem;
+	margin-top: 1rem;
+	text-shadow: 5px -6px 5px white;
+	font-family: 'Righteous', cursive;
+}
+#birthday #name{
+	font-size: 3rem;
+	color: rgb(0, 255, 98);
+	width: bold;
+	text-shadow: 4px -4px 5px black;
+	position: relative;
+	top: 20vh;
+	animation-name: bday;
+	animation-duration: 1s;
+	font-family: 'Satisfy', cursive;
+}
+@keyframes bday{
+	0%{
+		top: 0px;
+	}
+	100%{
+		top: 50vh;
+		color: red;
+	}
+}
+img{
+	width: 23vw;
+	height: 35vh;
+}
+#i1{
+	position: absolute;
+	top: 40vh;
+	left: 0px;
+}
+#i2{
+	position: absolute;
+	top: 40vh;
+	left: 75vw;
+}
+footer{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 10vh;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+}
+footer h3{
+	color: black;
+	font-size: 2rem;
+}
+
+@media only screen and (max-width: 415px){
+	#birthday h1{
+		text-align: center;
+	font-size: 2rem;
+}
+img{
+	width: 30vw;
+	height: 18vh;
+}
+#i1{
+	position: absolute;
+	top: 50vh;
+	left: 0px;
+}
+#i2{
+	position: absolute;
+	top: 16vh;
+	left: 64vw;
+}
+#i3{
+	position: relative;
+	top: 8vh;
+	left: 0vw;
+	opacity: 0.5;
+}
+footer{
+	height: 7vh;
+}
+footer h3{
+	color: black;
+	font-size: 17px;
+	font-weight: bold;
+}
+}
